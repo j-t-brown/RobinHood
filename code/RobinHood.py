@@ -1,6 +1,9 @@
 """
-Code to implement protective masking (k-anonymity/k-concealment - based)
-anonymization approach.
+Code to implement the Robinhood 
+de-identification method with privacy 
+protections similar to that of 
+k-anonymity at a user-defined
+value of k.
 """
 
 import numpy as np
@@ -112,9 +115,9 @@ class sample_from_histogram:
             self.process_samples(i, samps, counts_field)
 
 
-### ProtectiveMasking classes
+### Robin Hood classes
 
-class ProtectiveMasking_histogram:
+class RobinHood_histogram:
 
 	def __init__(self, df, target_k, group_var, gen_attributes, C_thresh, D_thresh,
 	gen_group_counts_field = 'gen_group_counts', gen_group_field = 'gen_group', 
@@ -348,7 +351,7 @@ class ProtectiveMasking_histogram:
 
 
 
-class ProtectiveMasking_row:
+class RobinHood_row:
 
 	def __init__(self, df, target_k, group_var, gen_attributes, C_thresh, D_thresh,
 	gen_group_counts_field = 'gen_group_counts', gen_group_field = 'gen_group', 
