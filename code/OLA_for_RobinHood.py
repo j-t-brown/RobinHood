@@ -1,5 +1,6 @@
 """
-Code to run OLA global k-anonymity generalization. Precursor for Protective Masking suppression.
+Code to run OLA global k-anonymity generalization.
+Precursor for Robin Hood masking.
 """
 
 ## Libraries
